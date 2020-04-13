@@ -3,6 +3,7 @@
 NEAT-O (a.k.a. NeuroEvolution of Augmenting Topologies-Onderzoekjes)
 
 The aim of this project is to create a modular engine for running cross-platform (browser-based, more specifically) neuro-evolutionary experiments.
+As you can tell by our index page, we're not there yet.
 
 ### To get started:
 
