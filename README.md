@@ -7,7 +7,7 @@ As you can tell by our index page, we're not there yet.
 
 ### Goals:
 
- - The simulation is tick-based and thus deterministic barring randomness introduced by the actual algorithm implementation used for evolution / mutation
+ - The simulation is tick-based and thus deterministic excluding randomness introduced by the actual algorithm implementation used for evolution / mutation
  - The result of every simulation iteration is an immutable state and can be saved / loaded based on a persistent "Experiment" model that serializes / deserializes to a buffer that can be written to LocalStorage, redis, etc.
  - The GUI should be intuitive and moreover non-repulsive for a change
  - The GUI should enable full insight into both the realtime state of the simulation (in case of realtime simulation) as well as every resulting iteration state (`ImmutableState`) not entirely unlike [Redux DevTools](https://github.com/reduxjs/redux-devtools)
