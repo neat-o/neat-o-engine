@@ -12,8 +12,26 @@ function App() {
             alignItems:     'center',
             justifyContent: 'center',
             fontSize:       40,
+            flexDirection:  'column',
         }}>
             NEAT-O
+            <button
+                style={{
+                    background:   'white',
+                    borderRadius: 0,
+                    padding:      10,
+                    marginTop:    10,
+                    border:       0,
+                }}
+                onClick={() => {
+                    const entropy = Math.random();
+                    const suckIt  = entropy < .69420;
+                    if (suckIt) window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
+                    else window.location.href = 'https://www.youtube.com/channel/UCnxGkOGNMqQEUMvroOWps6Q';
+                }}
+            >
+                50/50 JRE Clips of Rickroll
+            </button>
         </div>
     );
 }
