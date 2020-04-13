@@ -12,7 +12,7 @@ As you can tell by our index page, we're not there yet.
  - The GUI should be intuitive and moreover non-repulsive for a change
  - The GUI should enable full insight into both the realtime state of the simulation (in case of realtime simulation) as well as every resulting iteration state (`ImmutableState`) not entirely unlike [Redux DevTools](https://github.com/reduxjs/redux-devtools)
  - The tick-based architecture should allow the simulation to be ran at whatever frequency the CPU allows and be fully consistent with the real-time equivalent
- - The GUI should ultimately facilitate the setup of experiments fully, providing - if necessary - an intelligent expression input component (based on e.g. [monaco](https://microsoft.github.io/monaco-editor/index.html)) for parameters such as the fitness function
+ - The GUI should ultimately facilitate the setup of experiments fully, providing - if necessary - an intelligent "code" input component (based on e.g. [monaco](https://microsoft.github.io/monaco-editor/index.html)) for expression parameters such as the fitness function
 
 ### To get started:
 
