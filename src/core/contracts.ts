@@ -36,7 +36,7 @@ export interface Experiment {
     // For save/load:
     serialize(): string;
     deserialize(serialized: string): this;
-    // "deserialize" is actually static or abstract to the Experiment implementation itself so
+    // "deserialize" is actually static or abstract to the ExperimentI implementation itself so
     // we should probably eventually use some kind of generic ExperimentIO or whatever interface
 
 }

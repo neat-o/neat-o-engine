@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap');
+@import '~antd/dist/antd.css';
 
-body {
-    margin:      0;
-    font-family: 'Source Code Pro', monospace;
-    font-size:   13px;
+h4 {
+    margin: 4px 0 10px;
 }

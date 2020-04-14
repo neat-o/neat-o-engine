@@ -9,7 +9,6 @@ export default function Editor(props: {
     language?: string,
     value: string,
     onChange: (value: string) => void,
-    isValid: (value: string) => boolean,
 
 } & { style?: CSSProperties }): React.ReactElement {
 
@@ -20,6 +19,7 @@ export default function Editor(props: {
             language={props.language || 'javascript'}
             theme="vs"
             value={props.value}
+            onChange={props.onChange}
             options={{
                 overviewRulerBorder:  false,
                 lineDecorationsWidth: 6,
