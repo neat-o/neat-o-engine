@@ -1,39 +1,39 @@
 import React from 'react';
+import Viewport from "./Viewport";
+import Editor from "./Editor";
 
-function App() {
-    return (
-        <div className="App" style={{
-            width:          '100%',
-            minHeight:      '100vh',
-            background:     'black',
-            color:          'white',
-            fontFamily:     'monospace',
-            display:        'flex',
-            alignItems:     'center',
-            justifyContent: 'center',
-            fontSize:       40,
-            flexDirection:  'column',
-        }}>
-            NEAT-O
-            <button
-                style={{
-                    background:   'white',
-                    borderRadius: 0,
-                    padding:      10,
-                    marginTop:    10,
-                    border:       0,
+const App: React.FC = () => <div style={{
+    display:   'flex',
+    minHeight: '100vh',
+}}>
+    <Viewport style={{
+        flex: 1,
+    }}/>
+    <div style={{
+        borderLeft: '1px solid #eee',
+        width:      400,
+    }}>
+        <div style={{padding: '0 22px 10px'}}>
+            <h4>Simulation config</h4>
+            <Editor
+                style={{height: 160, margin: '0 -22px'}}
+                onChange={() => {
                 }}
-                onClick={() => {
-                    const entropy = Math.random();
-                    const suckIt  = entropy < .69420;
-                    if (suckIt) window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
-                    else window.location.href = 'https://www.youtube.com/channel/UCnxGkOGNMqQEUMvroOWps6Q';
-                }}
-            >
-                50/50 JRE Clips of Rickroll
-            </button>
+                isValid={(() => true)}
+                value={`export default {
+    stepSize: 1,
+    halt: () => false,
+}`}
+            />
         </div>
-    );
-}
-
+        <div style={{borderTop: '1px solid #eee', padding: '0 22px 20px'}}>
+            <h4>Experiment summary</h4>
+            play / pause<br/>
+            state history<br/>
+        </div>
+        <div style={{borderTop: '1px solid #eee', padding: '0 22px 20px'}}>
+            <h4>Log</h4>
+        </div>
+    </div>
+</div>
 export default App;
