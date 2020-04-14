@@ -2,6 +2,8 @@ import React from 'react';
 import Viewport from "./Viewport";
 import Editor from "./Editor";
 
+import testSetup from "./testSetup";
+
 const App: React.FC = () => <div style={{
     display:   'flex',
     minHeight: '100vh',
@@ -14,16 +16,13 @@ const App: React.FC = () => <div style={{
         width:      400,
     }}>
         <div style={{padding: '0 22px 10px'}}>
-            <h4>Simulation config</h4>
+            <h4>Experiment definition</h4>
             <Editor
-                style={{height: 160, margin: '0 -22px'}}
+                style={{height: 300, margin: '0 -22px'}}
                 onChange={() => {
                 }}
                 isValid={(() => true)}
-                value={`export default {
-    stepSize: 1,
-    halt: () => false,
-}`}
+                value={testSetup}
             />
         </div>
         <div style={{borderTop: '1px solid #eee', padding: '0 22px 20px'}}>
