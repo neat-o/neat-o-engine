@@ -16,11 +16,9 @@ As you can tell by our index page, we're not there yet.
 ### To get started:
 
 ```
-npm install
-npm run start
+npm install && npm run start
 
-# or if you're using yarn:
+# or if you're a yarn type of person:
 
-yarn
-yarn start
+yarn && yarn start
 ```
