@@ -1,4 +1,4 @@
-# NEAT-O-Engine
+# NEAT-O Engine
 
 NEAT-O (a.k.a. NeuroEvolution of Augmenting Topologies-Onderzoekjes)
 
